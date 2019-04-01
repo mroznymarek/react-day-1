@@ -41,7 +41,6 @@ const WhatReactCanDisplay = (props) => (
             ))
         }
         </ul>
-        
     </div>
 )
 

@@ -1,9 +1,13 @@
 import React from 'react'
 
-const DisplayPassedName = (props) => (
+const DisplayPassedName = (props) => {
+    console.log(props)
+
+    return (
     <div>
-        XX
+        {props.name}
     </div>
-)
+    )
+}
 
 export default DisplayPassedName
