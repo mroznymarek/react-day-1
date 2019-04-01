@@ -13,7 +13,7 @@ const reactCanDisplayArray = ['Ala', 'Ola', 'Ela']
 const reactCanDisplayReactElement = <b>Gruba Ala</b>
 
 const WhatReactCanDisplay = (props) => (
-    <div>
+        <div>
         <h4>Strings:</h4>
             <p>{reactCanDisplayString}</p>
         <h4>Numbers:</h4>
@@ -31,10 +31,17 @@ const WhatReactCanDisplay = (props) => (
         <h4>React Element:</h4>
             <p>{reactCanDisplayReactElement}</p>
         <h4>Array mapping:</h4>
-            <p>{reactCanDisplayArray.map(
-                element => <li>{element}</li>
-            )
-            }</p>
+        <ul>{reactCanDisplayArray.map(
+            (element, index) => (
+                <li
+                    key={index + element}
+                >
+                    {element}
+                </li>
+            ))
+        }
+        </ul>
+        
     </div>
 )
 
