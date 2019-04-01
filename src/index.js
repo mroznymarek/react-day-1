@@ -5,6 +5,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 console.log(App)
+console.log(typeof App)
+console.log(<App/>)
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
